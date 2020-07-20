@@ -1,7 +1,7 @@
 const request = require('request');
 
 const fetchData = (query, callback) => {
-    const url = `http://api.weatherstack.com/current?access_key=ed2dfdec63a7e1f209ca33f11a7ec204&query=${encodeURIComponent(query)}`;
+    const url = `http://api.weatherstack.com/current?access_key=${process.env.app_key}&query=${encodeURIComponent(query)}`;
     setTimeout(() => {
         request({
             url,
