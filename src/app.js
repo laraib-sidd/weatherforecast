@@ -4,7 +4,8 @@ const hbs = require('hbs');
 const forecast = require('./utils/forecast');
 
 // Intialising Express app
-const app = express()
+const app = express();
+const port = process.env.PORT || 3000;
 
 // Setting up file paths
 const filePath = path.join(__dirname, '../public')
@@ -75,7 +76,7 @@ app.get('*', (req, res) => {
     })
 })
 
-
-app.listen(3003, () => {
-    console.log('The server is running on 3002');
+ 
+app.listen(port, () => {
+    console.log(`The server is running on ${port}`);
 })
