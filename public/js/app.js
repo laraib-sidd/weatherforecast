@@ -17,8 +17,3 @@ weatherForm.addEventListener('submit', (e) => {
             }
         })
 })
-
-// url = 'http://puzzle.mead.io/puzzle'
-// fetch(url)
-//     .then((res) => res.json())
-//     .then((data) => console.log(data)) 
