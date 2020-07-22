@@ -5,7 +5,7 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     para[1].innerText = "Loading...."
     const int = e.target[0].value
-    url = `/weather?address=${int}`
+    url = `/weather?addresss=${int}`
     fetch(url)
         .then(res => res.json())
         .then((data) => {
